@@ -1,5 +1,11 @@
-body {
-  background-color: bisque;
-  color: black;
+#carouselExampleFade,
+.carousel-inner,
+.carousel-item {
+  height: 500px;
 }
 
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

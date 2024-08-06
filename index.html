@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>funkos con bootstrap y git</title>
+    <title>Bootstrap</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="./css/estilos.css">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
-    <h1 class="text-center">Películas Clásicas</h1>
-    <h2 class="text-center">Las mejores movies clásicas del cine</h2>
-    <p class="text-center">
-      Las películas clásicas del cine en éste sitio gratis para todo usuario
-      fanático del cine vintage. Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Ab nisi, atque nemo enim ea similique veniam consectetur
-      repellendus dolore reiciendis, facere aut cum rerum sed alias nobis dicta
-      recusandae quasi! Lorem ipsum, dolor sit amet consectetur adipisicing
-      elit. Unde officiis accusantium reprehenderit atque sed non odit velit
-      numquam pariatur et dolore nam culpa corporis, vitae ullam amet expedita
-      necessitatibus impedit. Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Ab nisi, atque nemo enim ea similique veniam consectetur repellendus
-      dolore reiciendis, facere aut cum rerum sed alias nobis dicta recusandae
-      quasi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-      officiis accusantium reprehenderit atque sed non odit velit numquam
-      pariatur et dolore nam culpa corporis, vitae ullam amet expedita
-      necessitatibus impedit. Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Ab nisi, atque nemo enim ea similique veniam consectetur repellendus
-      dolore reiciendis, facere aut cum rerum sed alias nobis dicta recusandae
-      quasi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-      officiis accusantium reprehenderit atque sed non odit velit numquam
-      pariatur et dolore nam culpa corporis, vitae ullam amet expedita
-      necessitatibus impedit.
-    </p>
-    <ul>
-      <li><a href="./home.html">Inicio</a></li>
-      <li>Messi</li>
-      <li>Michael Jackson</li>
-    </ul>
-    <footer class="text-center">
-      <a href="www.rollingcodeschool.com" target="_blank"
-        >La Escuela que me enseña a Programar</a
-      >
-    </footer>
-     <script
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              class="img-logo"
+              src="./assets/logo2.png"
+              alt="logo de la página"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Comunidad</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Iniciar sesión</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-secondary">Crear cuenta</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/python.jpg" class="d-block w-100" alt="python" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/ract.jpg" class="d-block w-100" alt="react" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/vue.jpg" class="d-block w-100" alt="vue" />
+          </div>
+          <div
+            class="overLay d-flex flex-column justify-content-center align-items-center text-white"
+          >
+            <h1>Crea tu cuenta sin costo</h1>
+            <button class="btn btn-light">Regístrate</button>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"

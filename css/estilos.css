@@ -1,5 +1,30 @@
-body {
-  background-color: bisque;
-  color: black;
+.img-logo {
+  width: 170px;
 }
 
+#carouselExampleFade,
+.carousel-inner,
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(0.8);
+}
+
+.overLay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.336);
+  z-index: 1;
+}
